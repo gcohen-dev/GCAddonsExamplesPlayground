@@ -3,18 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A745506424B25EC60004C14D /* HomeViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745506324B25EC60004C14D /* HomeViewController+Extensions.swift */; };
+		A745506624B2641C0004C14D /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745506524B2641C0004C14D /* Gradient.swift */; };
+		A745506F24B393790004C14D /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745506E24B393780004C14D /* String+extension.swift */; };
+		A745507124B3C34B0004C14D /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A745507024B3C34B0004C14D /* HomeCoordinator.swift */; };
+		A745507424B3C5EA0004C14D /* GCAddonsCollection in Frameworks */ = {isa = PBXBuildFile; productRef = A745507324B3C5EA0004C14D /* GCAddonsCollection */; };
+		A7A93D0724AFBD61001AD667 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A93D0624AFBD61001AD667 /* UITextFieldExtension.swift */; };
 		A7BFD2B7249CAB890058EC74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFD2B6249CAB890058EC74 /* AppDelegate.swift */; };
 		A7BFD2B9249CAB890058EC74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFD2B8249CAB890058EC74 /* SceneDelegate.swift */; };
-		A7BFD2BB249CAB890058EC74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFD2BA249CAB890058EC74 /* ViewController.swift */; };
-		A7BFD2BE249CAB890058EC74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7BFD2BC249CAB890058EC74 /* Main.storyboard */; };
 		A7BFD2C0249CAB8C0058EC74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7BFD2BF249CAB8C0058EC74 /* Assets.xcassets */; };
 		A7BFD2C3249CAB8C0058EC74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7BFD2C1249CAB8C0058EC74 /* LaunchScreen.storyboard */; };
 		A7BFD2CE249CAB8C0058EC74 /* GCAddonsExamplesPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFD2CD249CAB8C0058EC74 /* GCAddonsExamplesPlaygroundTests.swift */; };
 		A7BFD2D9249CAB8C0058EC74 /* GCAddonsExamplesPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BFD2D8249CAB8C0058EC74 /* GCAddonsExamplesPlaygroundUITests.swift */; };
+		A7E2504F24AC70FC00888E19 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2504D24AC70FC00888E19 /* HomeViewController.swift */; };
+		A7E2505024AC70FC00888E19 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E2504E24AC70FC00888E19 /* HomeViewController.xib */; };
+		A7E2505224AC711600888E19 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2505124AC711600888E19 /* HomeViewModel.swift */; };
+		A7E2505524AC778E00888E19 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2505424AC778E00888E19 /* Products.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A745506324B25EC60004C14D /* HomeViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Extensions.swift"; sourceTree = "<group>"; };
+		A745506524B2641C0004C14D /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		A745506E24B393780004C14D /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		A745507024B3C34B0004C14D /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		A7A93D0624AFBD61001AD667 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		A7BFD2B3249CAB890058EC74 /* GCAddonsExamplesPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCAddonsExamplesPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BFD2B6249CAB890058EC74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7BFD2B8249CAB890058EC74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A7BFD2BA249CAB890058EC74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A7BFD2BD249CAB890058EC74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7BFD2BF249CAB8C0058EC74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7BFD2C2249CAB8C0058EC74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7BFD2C4249CAB8C0058EC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +60,11 @@
 		A7BFD2D4249CAB8C0058EC74 /* GCAddonsExamplesPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCAddonsExamplesPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BFD2D8249CAB8C0058EC74 /* GCAddonsExamplesPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCAddonsExamplesPlaygroundUITests.swift; sourceTree = "<group>"; };
 		A7BFD2DA249CAB8C0058EC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7BFD2E6249CABC50058EC74 /* GCAddonsCollection */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GCAddonsCollection; path = ../GCAddonsCollection; sourceTree = "<group>"; };
+		A7E2504D24AC70FC00888E19 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A7E2504E24AC70FC00888E19 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		A7E2505124AC711600888E19 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A7E2505424AC778E00888E19 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A745507424B3C5EA0004C14D /* GCAddonsCollection in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +93,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A745507224B3C5EA0004C14D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7A93D0524AFBD3E001AD667 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7A93D0624AFBD61001AD667 /* UITextFieldExtension.swift */,
+				A745506524B2641C0004C14D /* Gradient.swift */,
+				A745506E24B393780004C14D /* String+extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A7BFD2AA249CAB890058EC74 = {
 			isa = PBXGroup;
 			children = (
+				A7BFD2E6249CABC50058EC74 /* GCAddonsCollection */,
 				A7BFD2B5249CAB890058EC74 /* GCAddonsExamplesPlayground */,
 				A7BFD2CC249CAB8C0058EC74 /* GCAddonsExamplesPlaygroundTests */,
 				A7BFD2D7249CAB8C0058EC74 /* GCAddonsExamplesPlaygroundUITests */,
 				A7BFD2B4249CAB890058EC74 /* Products */,
+				A745507224B3C5EA0004C14D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +135,10 @@
 		A7BFD2B5249CAB890058EC74 /* GCAddonsExamplesPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				A7A93D0524AFBD3E001AD667 /* Extensions */,
+				A7E2504C24AC70D500888E19 /* Home */,
 				A7BFD2B6249CAB890058EC74 /* AppDelegate.swift */,
 				A7BFD2B8249CAB890058EC74 /* SceneDelegate.swift */,
-				A7BFD2BA249CAB890058EC74 /* ViewController.swift */,
-				A7BFD2BC249CAB890058EC74 /* Main.storyboard */,
 				A7BFD2BF249CAB8C0058EC74 /* Assets.xcassets */,
 				A7BFD2C1249CAB8C0058EC74 /* LaunchScreen.storyboard */,
 				A7BFD2C4249CAB8C0058EC74 /* Info.plist */,
@@ -128,6 +164,35 @@
 			path = GCAddonsExamplesPlaygroundUITests;
 			sourceTree = "<group>";
 		};
+		A7E2504C24AC70D500888E19 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A7E2505624AC78A000888E19 /* Services */,
+				A7E2505324AC774300888E19 /* Models */,
+				A7E2504D24AC70FC00888E19 /* HomeViewController.swift */,
+				A7E2504E24AC70FC00888E19 /* HomeViewController.xib */,
+				A7E2505124AC711600888E19 /* HomeViewModel.swift */,
+				A745506324B25EC60004C14D /* HomeViewController+Extensions.swift */,
+				A745507024B3C34B0004C14D /* HomeCoordinator.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A7E2505324AC774300888E19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7E2505424AC778E00888E19 /* Products.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A7E2505624AC78A000888E19 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +209,9 @@
 			dependencies = (
 			);
 			name = GCAddonsExamplesPlayground;
+			packageProductDependencies = (
+				A745507324B3C5EA0004C14D /* GCAddonsCollection */,
+			);
 			productName = GCAddonsExamplesPlayground;
 			productReference = A7BFD2B3249CAB890058EC74 /* GCAddonsExamplesPlayground.app */;
 			productType = "com.apple.product-type.application";
@@ -234,7 +302,7 @@
 			files = (
 				A7BFD2C3249CAB8C0058EC74 /* LaunchScreen.storyboard in Resources */,
 				A7BFD2C0249CAB8C0058EC74 /* Assets.xcassets in Resources */,
-				A7BFD2BE249CAB890058EC74 /* Main.storyboard in Resources */,
+				A7E2505024AC70FC00888E19 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +327,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7BFD2BB249CAB890058EC74 /* ViewController.swift in Sources */,
 				A7BFD2B7249CAB890058EC74 /* AppDelegate.swift in Sources */,
+				A7A93D0724AFBD61001AD667 /* UITextFieldExtension.swift in Sources */,
+				A745506424B25EC60004C14D /* HomeViewController+Extensions.swift in Sources */,
 				A7BFD2B9249CAB890058EC74 /* SceneDelegate.swift in Sources */,
+				A7E2505524AC778E00888E19 /* Products.swift in Sources */,
+				A7E2504F24AC70FC00888E19 /* HomeViewController.swift in Sources */,
+				A7E2505224AC711600888E19 /* HomeViewModel.swift in Sources */,
+				A745507124B3C34B0004C14D /* HomeCoordinator.swift in Sources */,
+				A745506624B2641C0004C14D /* Gradient.swift in Sources */,
+				A745506F24B393790004C14D /* String+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +372,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A7BFD2BC249CAB890058EC74 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7BFD2BD249CAB890058EC74 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A7BFD2C1249CAB8C0058EC74 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -590,6 +657,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A745507324B3C5EA0004C14D /* GCAddonsCollection */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GCAddonsCollection;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A7BFD2AB249CAB890058EC74 /* Project object */;
 }
