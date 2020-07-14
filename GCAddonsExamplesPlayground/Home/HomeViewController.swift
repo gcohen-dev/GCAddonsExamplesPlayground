@@ -37,7 +37,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func userEditingChanged(_ sender: UITextField) {
-                homeViewModel.action(Input.userTextField(text: sender.text ?? ""))
+        homeViewModel.action(Input.userTextField(text: sender.text ?? ""))
     }
     
     override func viewDidLoad() {
@@ -47,19 +47,6 @@ class HomeViewController: UIViewController {
     }
     
     func bind() {
-        /// Bind view to view model
-//        outletUserTextField.textPublisher
-//            .debounce(for: 0.5, scheduler: RunLoop.main)
-//            .removeDuplicates()
-//            .assign(to: \.userName, on: homeViewModel)
-//            .store(in: &bindings)
-//        
-//        outletPasswordTextField.textPublisher
-//            .debounce(for: 0.5, scheduler: RunLoop.main)
-//            .removeDuplicates()
-//            .assign(to: \.password, on: homeViewModel)
-//            .store(in: &bindings)
-        
         /// Bind view model to view
         homeViewModel.$state.sink { [weak self] (state) in
             guard let self = self else { return }
@@ -93,7 +80,6 @@ class HomeViewController: UIViewController {
     
     @IBAction func signInTapped(_ sender: UIButton) {
         homeViewModel.action(.signInTapped)
-        
     }
 
 }
