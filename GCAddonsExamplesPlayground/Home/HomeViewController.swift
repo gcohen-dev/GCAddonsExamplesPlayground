@@ -11,6 +11,12 @@ import Combine
 
 class HomeViewController: UIViewController {
     
+    enum Input {
+        case userTextField(text: String)
+        case passwordTextField(text: String)
+        case signInTapped
+    }
+    
     let homeViewModel: HomeViewModel
     private var bindings = Set<AnyCancellable>()
     
@@ -26,9 +32,12 @@ class HomeViewController: UIViewController {
         super.init(nibName: "HomeViewController", bundle: nil)
     }
     
-    enum HomeInput {
-        case userTextField(publisher: AnyPublisher<String, Never>)
-        case passwordTextField(publisher: AnyPublisher<String, Never>)
+    @IBAction func passwordEditingChanged(_ sender: UITextField) {
+        homeViewModel.action(Input.passwordTextField(text: sender.text ?? ""))
+    }
+    
+    @IBAction func userEditingChanged(_ sender: UITextField) {
+                homeViewModel.action(Input.userTextField(text: sender.text ?? ""))
     }
     
     override func viewDidLoad() {
@@ -39,17 +48,17 @@ class HomeViewController: UIViewController {
     
     func bind() {
         /// Bind view to view model
-        outletUserTextField.textPublisher
-            .debounce(for: 0.5, scheduler: RunLoop.main)
-            .removeDuplicates()
-            .assign(to: \.userName, on: homeViewModel)
-            .store(in: &bindings)
-        
-        outletPasswordTextField.textPublisher
-            .debounce(for: 0.5, scheduler: RunLoop.main)
-            .removeDuplicates()
-            .assign(to: \.password, on: homeViewModel)
-            .store(in: &bindings)
+//        outletUserTextField.textPublisher
+//            .debounce(for: 0.5, scheduler: RunLoop.main)
+//            .removeDuplicates()
+//            .assign(to: \.userName, on: homeViewModel)
+//            .store(in: &bindings)
+//        
+//        outletPasswordTextField.textPublisher
+//            .debounce(for: 0.5, scheduler: RunLoop.main)
+//            .removeDuplicates()
+//            .assign(to: \.password, on: homeViewModel)
+//            .store(in: &bindings)
         
         /// Bind view model to view
         homeViewModel.$state.sink { [weak self] (state) in
@@ -83,7 +92,8 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func signInTapped(_ sender: UIButton) {
-        homeViewModel.handleSignInTapped()
+        homeViewModel.action(.signInTapped)
+        
     }
 
 }

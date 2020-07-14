@@ -19,7 +19,9 @@ import Combine
 
 protocol ViewModelProtocol: ObservableObject where ObjectWillChangePublisher.Output == Void {
     associatedtype State
+    associatedtype Input
     var state: State { get }
+    func action(_ input: Input)
 }
 
 class HomeViewModel: NSObject, ViewModelProtocol {
@@ -43,7 +45,8 @@ class HomeViewModel: NSObject, ViewModelProtocol {
     private var bindings = Set<AnyCancellable>()
 
     private lazy var validateLogin: AnyCancellable = {
-        Publishers.CombineLatest($userName, $password).dropFirst().sink { (user, password) in
+        Publishers.CombineLatest($userName, $password).debounce(for: 0.5, scheduler: RunLoop.main)
+            .sink { (user, password) in
             if user.count == 0 && password.count == 0 {
                 self.state = .idle
                 return
@@ -67,6 +70,14 @@ class HomeViewModel: NSObject, ViewModelProtocol {
     override init() {
         super.init()
         validateLogin.store(in: &bindings)
+    }
+    
+    func action(_ input: HomeViewController.Input) {
+        switch input {
+        case .userTextField(text: let text): self.userName = text
+        case .passwordTextField(text: let text): self.password = text
+        case .signInTapped: handleSignInTapped()
+        }
     }
     
     func handleSignInTapped() {
