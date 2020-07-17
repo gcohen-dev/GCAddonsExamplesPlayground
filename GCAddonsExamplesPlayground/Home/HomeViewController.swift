@@ -78,8 +78,6 @@ class HomeViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @IBAction func signInTapped(_ sender: UIButton) {
-        homeViewModel.action(.signInTapped)
-    }
+    @IBAction func signInTapped(_ sender: UIButton) { homeViewModel.action(.signInTapped) }
 
 }
